@@ -71,3 +71,4 @@ class GameView:
         col = (event.x - PADDING) // CELL_SIZE
         if self._column_handler:
             self._column_handler(col)
+            

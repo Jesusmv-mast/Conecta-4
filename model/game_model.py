@@ -39,7 +39,7 @@ class GameModel:
 
     def switch_player(self):
         self.current_player = 'O' if self.current_player == 'X' else 'X'
-        
+
     def check_winner(self, player):
         directions = ((0, 1), (1, 0), (1, 1), (1, -1))
         for r in range(self.rows):
@@ -61,3 +61,4 @@ class GameModel:
             if self.board[r][c] != player:
                 return False
         return True
+    
