@@ -61,4 +61,3 @@ class GameModel:
             if self.board[r][c] != player:
                 return False
         return True
-    

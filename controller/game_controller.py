@@ -47,4 +47,3 @@ class GameController:
     def _update_view(self, message):
         self.view.draw_board(self.model.board)
         self.view.set_status(message)
-        
