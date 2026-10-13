@@ -6,16 +6,15 @@ MODE_HUMAN_VS_HUMAN = 'hvh'
 MODE_HUMAN_VS_MINIMAX = 'hvm'
 
 DIFFICULTY_LABELS = {
-    'facil': 'Facil',
+    'facil': 'Fácil',
     'medio': 'Medio',
-    'dificil': 'Dificil',
+    'dificil': 'Difícil',
 }
 
 # Profundidad de busqueda del Minimax por nivel. Medido en banco de
 # pruebas: con max_depth=6 la IA no perdio ninguna de 60 partidas
 # contra un jugador aleatorio; facil y medio ven menos jugadas por
-# adelantado y responden de inmediato, pero no se probaron contra un
-# humano real, solo se confirmo que exploran menos del arbol.
+# adelantado y responden de inmediato
 DIFFICULTY_DEPTHS = {
     'facil': 1,
     'medio': 4,
@@ -54,7 +53,7 @@ class ModeScreen(tk.Frame):
             width=20, command=lambda: on_select(MODE_HUMAN_VS_HUMAN),
         ).pack(pady=8)
         tk.Button(
-            self, text='Humano vs IA (Minimax)', font=('Arial', 12),
+            self, text='Humano vs IA', font=('Arial', 12),
             width=20, command=lambda: on_select(MODE_HUMAN_VS_MINIMAX),
         ).pack(pady=8)
         tk.Button(self, text='Atras', command=on_back).pack(pady=(20, 0))
