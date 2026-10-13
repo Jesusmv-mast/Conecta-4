@@ -1,6 +1,7 @@
 # Entorno virtual
 venv/
 .venv/
+.pytest_cache/
 
 # Bytecode de Python
 __pycache__/
